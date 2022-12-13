@@ -1,1 +1,7 @@
 /* pages/databinding/databind.wxss */
+
+@import "/common/commmon.wxss";
+
+view{
+  color: white;
+}

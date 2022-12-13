@@ -28,7 +28,7 @@
 </view>
 
 <view>-----------</view>
-<view wx:for="{{userlist}}" wx:key="id">
+<view class="username" wx:for="{{userlist}}" wx:key="id">
   {{item.name}}
 </view>
 
