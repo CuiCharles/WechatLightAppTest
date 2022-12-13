@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/databinding/databind",
     "pages/list/list",
     "pages/index/index",
     "pages/logs/logs"

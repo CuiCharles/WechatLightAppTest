@@ -1,0 +1,35 @@
+<!--pages/databinding/databind.wxml-->
+<!-- mustache语法（双大括号|插值表达式）运用场景：
+  1，动态内容绑定
+  2，动态属性绑定
+-->
+<text>{{info}}</text>
+
+<block wx:if="{{condition === true}}">
+  <image  src="{{imageSrc}}"></image>
+  <button type="primary" plain bindtap="btnTapHandler">click me</button>
+</block>
+
+
+
+
+
+
+<button type="primary" plain bindtap="btnCountAdd">add one</button>
+<input type="text" value="{{msg}}" bindinput="inputHanlder"/>
+
+<view wx:for="{{arry1}}" wx:key="index">
+  索引是：{{index}} 当前项目：{{item}}
+</view>
+
+<view>-----------</view>
+<view wx:for="{{arry1}}" wx:for-index="indx" wx:for-item="itemName" wx:key="idx">
+  索引是：{{indx}} 当前项目：{{itemName}}
+</view>
+
+<view>-----------</view>
+<view wx:for="{{userlist}}" wx:key="id">
+  {{item.name}}
+</view>
+
+
