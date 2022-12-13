@@ -1,2 +1,58 @@
 <!--pages/list/list.wxml-->
-<navigator url="/pages/index/index">pages/list/list.wxml</navigator>
+
+<!--view croll-view  swiper  swiper-item-->
+
+<View class="container1">
+  <view>A</view>
+  <view>B</view>
+  <view>C</view>
+</View>
+
+<scroll-view class="container2" scroll-y show-scrollbar="false" enhanced="true">
+  <view>A</view>
+  <view>B</view>
+  <view>C</view>
+</scroll-view>
+
+<swiper class="swiper-container" indicator-dots circular>
+  <swiper-item>
+    <view class="item">A</view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="item">B</view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="item">C</view>
+  </swiper-item>
+
+
+</swiper>
+
+
+<text selectable="true">1252322154</text>
+
+<button>normal</button>
+<button type="primary">primary</button>
+<button type="warn">warn</button>
+
+
+<button  size="mini">normal</button>
+<button type="primary" size="mini">primary</button>
+<button type="warn"  size="mini">warn</button>
+
+<button  size="mini" plain>normal</button>
+<button type="primary" size="mini" plain>primary</button>
+<button type="warn"  size="mini" plain>warn</button>
+
+<image></image>
+
+
+<!--小程序api
+    三大分类：
+    1，事件监听类api
+    2，同步api
+    3，异步api
+
+-->
