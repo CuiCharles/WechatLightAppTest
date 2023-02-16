@@ -1,0 +1,5 @@
+<!--components/test/test.wxml-->
+<text class="gradddd">components/test/test.wxml</text>
+<button bindtap="addCount"> + 1</button>
+
+<button bindtap="shnowInfo">显示数据</button>

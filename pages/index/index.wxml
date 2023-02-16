@@ -18,6 +18,10 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <button bindtap="modifyValue">hello</button>
+    <button bindtap="modifyValue2">reset</button>
+    <text class="user-motto">{{"     " + motto}}</text>
+    <text class="user-motto">{{"     " +testDatabind}}</text>
+    <text class="user-motto">{{appdata}}</text>
   </view>
 </view>

@@ -1,0 +1,4 @@
+<!--components/dataMonitor/dataMonitor.wxml-->
+<text>{{n1}} + {{n2}} = {{sum}}</text>
+<button bindtap="addN1">n1+1</button>
+<button bindtap="addN2">n2+1</button>

@@ -1,0 +1,7 @@
+/* components/test/test.wxss */
+
+.gradddd{
+  color:red;
+  background-color: royalblue;
+  font-weight: 300;
+}

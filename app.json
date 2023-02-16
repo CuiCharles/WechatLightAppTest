@@ -1,41 +1,45 @@
 {
-  "pages":[
+  "pages": [
+    "pages/mypage/mypage",
     "pages/databinding/databind",
     "pages/list/list",
     "pages/index/index",
     "pages/logs/logs"
-
+   
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#2b4b6b",
     "navigationBarTitleText": "Charles",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true,
     "backgroundColor": "#efefef",
     "onReachBottomDistance": 100
   },
-
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "index"
-      
-    },
-    {
-      "pagePath": "pages/list/list",
-      "text": "list"
-    },
-    {
-      "pagePath": "pages/databinding/databind",
-      "text": "databind"
-      
-    }
-  ]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "index"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "list"
+      },
+      {
+        "pagePath": "pages/databinding/databind",
+        "text": "databind"
+      },
+      {
+        "pagePath": "pages/mypage/mypage",
+        "text": "mypage"
+      }
+    ]
   },
-
-
-
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "dataMonitor" : "/components/dataMonitor/dataMonitor",
+    "slottest" : "/components/slottest/slottest"
+  }
 }

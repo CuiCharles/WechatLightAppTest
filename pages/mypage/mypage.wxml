@@ -1,0 +1,10 @@
+<!--pages/mypage/mypage.wxml-->
+<!-- <my-test1 max="11"></my-test1>
+<view>--------------------------------</view>
+<dataMonitor></dataMonitor>
+<view>--------------------------------</view> -->
+<slottest>
+  <view>
+    这是组件外的节点
+  </view>
+</slottest>

@@ -80,11 +80,33 @@ Page({
   },
 
   btnCountAdd(e){
-    console.log("ok")
-    this.setData({
-      count: this.data.count + 1,
-      condition : !this.data.condition
+
+    wx:wx.request({
+      url: 'https://www.baidu.com',
+      data: {
+        age:23,
+        name:"charles"
+      },
+      method: "GET",
+     
+      timeout: 1000000,
+      success: (result) => {
+
+        console.log(result)
+
+      },
+      fail: (err) => {
+        console.log('error:' + JSON.stringify(err))
+      },
     })
+
+    console.log("ok")
+    // this.setData({
+    //   count: this.data.count + 1,
+    //   condition : !this.data.condition
+    // })
+
+
   },
 
   inputHanlder(e){
@@ -94,8 +116,16 @@ Page({
     })
     
     this.onLoad
-  }
+  },
 
+
+  eventList(e){
+    console.log(JSON.stringify(e))
+    console.log(e)
+    this.setData({
+      count : this.data.count + e.target.dataset.info
+    })
+  }
 
 
 

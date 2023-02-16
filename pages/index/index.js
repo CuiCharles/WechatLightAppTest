@@ -5,6 +5,8 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World44444',
+    testDatabind: "test databind",
+    appdata: Math.random() * 10,
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -43,6 +45,18 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+
+  modifyValue(e){
+    this.setData({
+      testDatabind:"nihao"
+    })
+  },
+
+  modifyValue2(e){
+    this.setData({
+      testDatabind:"hello"
     })
   }
 })
