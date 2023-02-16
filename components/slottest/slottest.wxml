@@ -1,8 +1,9 @@
 <!--components/slottest/slottest.wxml-->
 <view>
   <view>
-    这里是组件的内部节点
+    这里是组件的内部节点{{count}}
   </view>
-  <slot>  </slot>
+  <button bindtap="addCount"> test</button>
+
 </view>
 

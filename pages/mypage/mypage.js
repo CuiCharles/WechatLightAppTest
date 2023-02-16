@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      count:2222
   },
 
   /**
@@ -62,5 +62,22 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+
+  testDataPass(e){
+    console.log(e.detail)
+    this.setData({
+      count:e.detail.data
+    })
+  },
+
+  callChild(){
+    const child =  this.selectComponent('.cA')
+    console.log(child)
+    child.addCount()
+
   }
+
+
 })

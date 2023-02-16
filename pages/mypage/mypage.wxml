@@ -3,8 +3,11 @@
 <view>--------------------------------</view>
 <dataMonitor></dataMonitor>
 <view>--------------------------------</view> -->
-<slottest>
-  <view>
-    这是组件外的节点
+
+<view>
+    父组件中count的值{{count}}
   </view>
-</slottest>
+<slottest count="{{count}}" bind:sync="testDataPass" class="cA"></slottest>
+
+
+<button bindtap="callChild" > 获取子组件实例</button>
