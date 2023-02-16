@@ -5,5 +5,8 @@
   </view>
   <button bindtap="addCount"> test</button>
 
+  <view>
+    在behavior中定义的用户名是：{{username}}
+  </view>
 </view>
 

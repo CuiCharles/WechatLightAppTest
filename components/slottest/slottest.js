@@ -1,5 +1,10 @@
-// components/slottest/slottest.js
+const myBehavior = require('../../behaviors/my-behavior')
+
+
+
 Component({
+
+  behaviors:[myBehavior],
 
   options:{
     multipleSlots: true,
