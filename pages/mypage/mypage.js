@@ -66,10 +66,15 @@ Page({
 
 
   testDataPass(e){
+
     console.log(e.detail)
     this.setData({
       count:e.detail.data
     })
+    const {email: d} = e.detail
+    const {data:i} = e.detail
+    console.log(d)
+    console.log(i)
   },
 
   callChild(){
@@ -77,6 +82,19 @@ Page({
     console.log(child)
     child.addCount()
 
+  },
+
+  async getInfo(){
+    const {data:res} = await wx.p.request({
+      method:'GET',
+      url:'https://www.baidu.com',
+      data:{
+        name:'zs',
+        age:20
+      }
+    })
+
+    console.log(res)
   }
 
 

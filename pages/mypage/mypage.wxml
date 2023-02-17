@@ -12,4 +12,4 @@
 
 <button bindtap="callChild" > 获取子组件实例</button>
 
-<van-button loading type="primary">测试</van-button>
+<van-button type="primary" bindtap="getInfo">测试</van-button>

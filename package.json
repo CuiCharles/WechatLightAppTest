@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/CuiCharles/WechatLightAppTest#readme",
   "dependencies": {
-    "@vant/weapp": "^1.10.13"
+    "@vant/weapp": "^1.10.13",
+    "miniprogram-api-promise": "^1.0.4"
   }
 }
