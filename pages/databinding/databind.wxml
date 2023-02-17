@@ -31,6 +31,8 @@
 <view class="username" wx:for="{{userlist}}" wx:key="id">
   {{item.name}}
 </view>
+
+
 <button bindtap="eventList" data-info="{{2}}">{{count}}</button>
 
 <my-test1></my-test1>
